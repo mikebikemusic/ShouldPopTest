@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UGe-py-I71">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,28 +18,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97a-X4-exU">
-                                <rect key="frame" x="163" y="122" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="To Two"/>
-                                <connections>
-                                    <segue destination="fov-MH-riI" kind="show" identifier="toTwo" id="HD5-U5-Rad"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxb-ap-REo">
-                                <rect key="frame" x="156" y="173" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="130" y="115" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="To Three"/>
                                 <connections>
                                     <segue destination="1X9-OS-AEW" kind="show" identifier="toThree" id="duc-6p-Bx4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHP-3U-5Yo">
-                                <rect key="frame" x="161" y="228" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="134" y="168" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="To Four"/>
                                 <connections>
                                     <segue destination="G3L-lV-cas" kind="show" identifier="toFour" id="eHW-vv-qdS"/>
@@ -48,13 +40,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="One" id="uBF-Ok-3eb"/>
+                    <navigationItem key="navigationItem" title="One" id="uBF-Ok-3eb">
+                        <barButtonItem key="rightBarButtonItem" title="To Two" id="Xid-hd-Ue5">
+                            <connections>
+                                <segue destination="fov-MH-riI" kind="show" id="Lgg-3Y-v8v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="894" y="136"/>
         </scene>
-        <!--Two View Controller-->
+        <!--Two-->
         <scene sceneID="hn8-DK-yB2">
             <objects>
                 <viewController id="fov-MH-riI" customClass="TwoViewController" customModule="ShouldPopTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,19 +61,20 @@
                         <viewControllerLayoutGuide type="bottom" id="gW8-Jc-ag9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1LS-xN-G3f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-ZL-Ohx">
-                                <rect key="frame" x="182" y="125" width="32" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0x4-iB-7kh">
+                                <rect key="frame" x="130" y="117" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To Three"/>
+                                <connections>
+                                    <segue destination="1X9-OS-AEW" kind="show" id="Ycf-kq-pNz"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0P-mV-J89">
-                                <rect key="frame" x="183" y="176" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="145" y="173" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pop"/>
                                 <connections>
                                     <action selector="popPressed:" destination="fov-MH-riI" eventType="touchUpInside" id="ock-cZ-z2i"/>
@@ -85,14 +84,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="v3f-yL-FWb"/>
+                    <navigationItem key="navigationItem" title="Two" id="HnV-Fm-Ldg">
+                        <barButtonItem key="rightBarButtonItem" title="To Four" id="ZBZ-E7-3mr">
+                            <connections>
+                                <segue destination="G3L-lV-cas" kind="show" id="R7s-kF-CmC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0o-Sg-d9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1868" y="136.28185907046478"/>
         </scene>
-        <!--Three View Controller-->
+        <!--Three-->
         <scene sceneID="C0e-uf-rN8">
             <objects>
                 <viewController id="1X9-OS-AEW" customClass="ThreeViewController" customModule="ShouldPopTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,50 +106,82 @@
                         <viewControllerLayoutGuide type="bottom" id="UCD-fW-X94"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cRf-ee-int">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-Ev-ywY">
-                                <rect key="frame" x="166" y="130" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9F-cP-0dz">
+                                <rect key="frame" x="136" y="92" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To Two"/>
+                                <connections>
+                                    <segue destination="fov-MH-riI" kind="show" id="Hs2-Zj-j4T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h3-re-9cd">
+                                <rect key="frame" x="147" y="146" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pop"/>
+                                <connections>
+                                    <action selector="popPressed:" destination="1X9-OS-AEW" eventType="touchUpInside" id="03R-7G-E4S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Three" id="q2h-Ln-ALM">
+                        <barButtonItem key="rightBarButtonItem" title="To Four" id="Hbm-rf-AwQ">
+                            <connections>
+                                <segue destination="G3L-lV-cas" kind="show" id="TPU-DN-RkO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdU-hS-LBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="895"/>
+            <point key="canvasLocation" x="848" y="1086"/>
         </scene>
-        <!--Four View Controller-->
+        <!--Four-->
         <scene sceneID="7fk-jv-Y91">
             <objects>
-                <viewController id="G3L-lV-cas" customClass="FourViewController" customModule="ShouldPopTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G3L-lV-cas" userLabel="Four" customClass="FourViewController" customModule="ShouldPopTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="08A-AR-00R"/>
                         <viewControllerLayoutGuide type="bottom" id="pNc-nX-C4c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lbg-jh-LCp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPs-Rn-EWF">
-                                <rect key="frame" x="166" y="128" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB9-9n-iqg">
+                                <rect key="frame" x="145" y="136" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="pop"/>
+                                <connections>
+                                    <action selector="popPressed:" destination="G3L-lV-cas" eventType="touchUpInside" id="fqI-aJ-jqS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4u-MW-MLM">
+                                <rect key="frame" x="136" y="87" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To Two"/>
+                                <connections>
+                                    <segue destination="fov-MH-riI" kind="show" id="I8H-Jy-MdC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Four" id="0Nl-LD-3rx" userLabel="Four">
+                        <barButtonItem key="rightBarButtonItem" title="To Three" id="cwv-de-K50">
+                            <connections>
+                                <segue destination="1X9-OS-AEW" kind="show" id="oiv-X8-pP3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fco-Ze-eA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1680" y="894"/>
+            <point key="canvasLocation" x="1783" y="1174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dij-Fh-NeJ">
@@ -165,4 +202,9 @@
             <point key="canvasLocation" x="894" y="-641"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oiv-X8-pP3"/>
+        <segue reference="TPU-DN-RkO"/>
+        <segue reference="I8H-Jy-MdC"/>
+    </inferredMetricsTieBreakers>
 </document>

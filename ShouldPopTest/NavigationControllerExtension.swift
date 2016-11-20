@@ -3,7 +3,6 @@
 //  ShouldPopTest
 //
 //  Created by Mike on 11/19/16.
-//  Copyright © 2016 Orologics. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +18,7 @@ extension UINavigationController {
     func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
         print("UINavigationController overriding shouldPop")
         
-        // Prevents from a synchronization issue of popping too many navigation items
+        // Prevents a synchronization issue of popping too many navigation items
         // and not enough view controllers or viceversa from unusual tapping
         if viewControllers.count < navigationBar.items!.count {
             return true
